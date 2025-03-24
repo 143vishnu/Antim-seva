@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <div class="logo-container">
+            <img src="logo.jpg" alt="Antim Path Solutions" class="logo">
+            <h1 class="logo-container">Antim Path Solutions </h1>
+        </div>
+        <h1>Frequently Asked Questions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <section class="faq">
+    <h2>Search FAQs</h2>
+    <input type="text" id="faqSearch" placeholder="Search questions...">
+
+    <!-- Category Filters -->
+    <div class="faq-categories">
+        <button onclick="filterFAQs('all')">All</button>
+        <button onclick="filterFAQs('payments')">Payments</button>
+        <button onclick="filterFAQs('services')">Services</button>
+        <button onclick="filterFAQs('customization')">Customization</button>
+    </div>
+
+    <div id="faq-list"></div>
+
+    
+    <div class="voice-search">
+        <p>Try voice search:</p>
+        <input type="text" id="voiceSearch" placeholder="Search questions...">
+      <button id="voiceSearchBtn">🎙️ Speak</button>
+    </div>
+
+
+    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+
+    <div class="faq-chatbot">
+      <input type="text" id="chatInput" placeholder="Ask me a question...">
+      <button id="chatSubmit">Send</button>
+      <div id="chatResponse"></div>
+    </div>
+
+   </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
